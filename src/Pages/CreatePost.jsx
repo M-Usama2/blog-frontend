@@ -18,7 +18,7 @@ const CreatePost = () => {
     data.set("content", content);
     data.set("file", files[0]);
     e.preventDefault();
-    const res = await fetch("https://blogger-z3fl.onrender.comapi/post", {
+    const res = await fetch("https://blogger-z3fl.onrender.com/api/post", {
       method: "POST",
       body: data,
       credentials: "include",

@@ -8,7 +8,7 @@ const PostPage = () => {
   const [postInfo, setPostInfo] = useState(null);
   const { userInfo } = useContext(UserContext);
   useEffect(() => {
-    fetch(`https://blogger-z3fl.onrender.comapi/post/${id}`)
+    fetch(`https://blogger-z3fl.onrender.com/api/post/${id}`)
       .then((res) => res.json())
       .then((res) => setPostInfo(res));
   }, []);

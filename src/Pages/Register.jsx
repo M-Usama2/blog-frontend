@@ -8,7 +8,7 @@ const Register = () => {
 
   async function register(e) {
     e.preventDefault();
-    const res = await fetch("https://blogger-z3fl.onrender.comapi/register", {
+    const res = await fetch("https://blogger-z3fl.onrender.com/api/register", {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: { "Content-Type": "application/json" },
