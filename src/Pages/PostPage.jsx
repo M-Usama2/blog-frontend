@@ -8,7 +8,7 @@ const PostPage = () => {
   const [postInfo, setPostInfo] = useState(null);
   const { userInfo } = useContext(UserContext);
   useEffect(() => {
-    fetch(`http://localhost:5000/api/post/${id}`)
+    fetch(`https://blogger-z3fl.onrender.comapi/post/${id}`)
       .then((res) => res.json())
       .then((res) => setPostInfo(res));
   }, []);
@@ -43,7 +43,10 @@ const PostPage = () => {
         </div>
       )}
       <div className="image">
-        <img src={`http://localhost:5000/${postInfo.cover}`} alt="" />
+        <img
+          src={`https://blogger-z3fl.onrender.com${postInfo.cover}`}
+          alt=""
+        />
       </div>
       <div
         className="content"

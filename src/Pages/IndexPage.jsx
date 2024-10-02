@@ -4,7 +4,7 @@ import Post from "../Components/Post";
 const IndexPage = () => {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/api/post").then((res) => {
+    fetch("https://blogger-z3fl.onrender.comapi/post").then((res) => {
       res.json().then((posts) => {
         setPosts(posts);
       });

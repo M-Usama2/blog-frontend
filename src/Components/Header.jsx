@@ -6,7 +6,7 @@ const Header = () => {
   const { setUserInfo, userInfo } = useContext(UserContext);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/profile", {
+    fetch("https://blogger-z3fl.onrender.comapi/profile", {
       credentials: "include",
     }).then((res) => {
       res.json().then((userInfo) => {
@@ -16,7 +16,7 @@ const Header = () => {
   }, []);
 
   function logout() {
-    fetch("http://localhost:5000/api/logout", {
+    fetch("https://blogger-z3fl.onrender.comapi/logout", {
       credentials: "include",
       method: "POST",
     });
